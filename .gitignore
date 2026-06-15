@@ -1,0 +1,21 @@
+# Word documents — local only
+*.docx
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.env
+venv/
+env/
+ds_env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data science artifacts
+*.pkl
+*.joblib
