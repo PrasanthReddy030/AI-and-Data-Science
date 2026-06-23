@@ -1,6 +1,6 @@
 # AI and Data Science Portfolio
 
-A collection of machine learning and deep learning projects built as part of a structured AI job preparation program.
+A collection of machine learning and deep learning projects.
 
 ## Structure
 
