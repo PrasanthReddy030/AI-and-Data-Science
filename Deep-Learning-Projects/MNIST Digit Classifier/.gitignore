@@ -1,0 +1,19 @@
+# Dataset (auto-downloaded by torchvision)
+data/
+
+# MLflow tracking store and run artifacts
+mlruns/
+mlflow.db
+
+# Trained model weights
+model_weights.pt
+
+# Generated evaluation plots
+reports/figures/
+
+# Python bytecode cache
+__pycache__/
+*.pyc
+
+# Project explanation docs (not for version control)
+*.docx
