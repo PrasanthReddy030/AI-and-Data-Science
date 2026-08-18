@@ -19,3 +19,11 @@ ds_env/
 # Data science artifacts
 *.pkl
 *.joblib
+
+# Trained model weights — large binary artifacts, over GitHub's 100MB limit.
+# Reproduce by re-running the project notebook (see each project's README).
+*.safetensors
+*.bin
+*.h5
+*.pt
+*.ckpt
