@@ -27,3 +27,10 @@ ds_env/
 *.h5
 *.pt
 *.ckpt
+
+# FAISS/vector index artifacts — regenerate by running the project notebook.
+*.faiss
+index/*.npy
+
+# W&B local run logs
+wandb/
