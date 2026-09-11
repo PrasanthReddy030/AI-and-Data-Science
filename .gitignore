@@ -1,5 +1,6 @@
-# Word documents — local only
+# Word documents and project spec PDFs — local reference only, not part of the codebase
 *.docx
+*Spec*.pdf
 
 # macOS
 .DS_Store
