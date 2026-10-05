@@ -1,6 +1,7 @@
-# Word documents and project spec PDFs — local reference only, not part of the codebase
+# Word documents and planning/spec PDFs — local reference only, not part of the codebase
 *.docx
 *Spec*.pdf
+*Step_Plan*.pdf
 
 # macOS
 .DS_Store
@@ -27,6 +28,7 @@ ds_env/
 *.bin
 *.h5
 *.pt
+*.pth
 *.ckpt
 
 # FAISS/vector index artifacts — regenerate by running the project notebook.
