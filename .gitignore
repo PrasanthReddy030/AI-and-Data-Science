@@ -37,3 +37,10 @@ index/*.npy
 
 # W&B local run logs
 wandb/
+
+# Chatbot/agent session logs — may contain test conversation data
+logs/
+
+# Project-local .gitignore files — only the top-level one here should govern the repo
+**/.gitignore
+!/.gitignore
