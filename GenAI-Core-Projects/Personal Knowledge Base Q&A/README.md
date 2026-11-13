@@ -9,6 +9,16 @@ generation) without an orchestration framework like LangChain - the one exceptio
 `chunk_recursive`, which uses LangChain's `RecursiveCharacterTextSplitter` (see
 [Design Decisions](#design-decisions)).
 
+**At a glance**
+
+| | |
+|---|---|
+| Corpus | 27 documents (17 md, 6 pdf, 4 txt) |
+| Eval set | 22 questions (20 answerable + 2 out-of-corpus controls) |
+| Best retrieval hit rate | 100% (baseline config: 500/50/fixed/k=4) |
+| Manual answer grading | 20 correct, 2 partial, 0 hallucinated |
+| Test suite | 15/15 passing (`pytest tests/`) |
+
 ## Setup
 
 ```bash

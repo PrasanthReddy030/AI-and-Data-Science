@@ -308,30 +308,34 @@ def main():
 
     # 5. Print comparison summary
     print("\n\n")
-    print("=" * 85)
+    print("=" * 95)
     print("EXPERIMENT COMPARISON")
-    print("=" * 85)
+    print("=" * 95)
 
     print(
-        f"{'Size':<10}"
-        f"{'Overlap':<10}"
+        f"{'Size':<8}"
+        f"{'Overlap':<9}"
         f"{'Strategy':<12}"
-        f"{'Top-k':<10}"
-        f"{'Hits':<12}"
-        f"{'Hit Rate':<12}"
+        f"{'Top-k':<7}"
+        f"{'Hits':<8}"
+        f"{'Hit Rate':<10}"
+        f"{'':<10}"
     )
 
-    print("-" * 85)
+    print("-" * 95)
 
     for result in all_results:
+        bar_filled = round(result["hit_rate"] * 20)
+        bar = "#" * bar_filled + "." * (20 - bar_filled)
 
         print(
-            f"{result['chunk_size']:<10}"
-            f"{result['overlap']:<10}"
+            f"{result['chunk_size']:<8}"
+            f"{result['overlap']:<9}"
             f"{result['strategy']:<12}"
-            f"{result['k']:<10}"
-            f"{result['hits']}/{result['total_questions']:<10}"
-            f"{result['hit_rate']:.2%}"
+            f"{result['k']:<7}"
+            f"{str(result['hits']) + '/' + str(result['total_questions']):<8}"
+            f"{result['hit_rate']:.0%}".ljust(10)
+            + f"[{bar}]"
         )
 
     # 6. Save results to JSON

@@ -45,6 +45,10 @@ def main():
     if not 0 <= args.threshold <= 1:
         parser.error("--threshold must be between 0 and 1")
 
+    print("=" * 60)
+    print("  Personal Knowledge Base Q&A")
+    print("=" * 60)
+
     # construct these once, not per-question - loading the embedding model
     # on every turn would waste real time
     print("Loading knowledge base...")
@@ -54,9 +58,12 @@ def main():
     retriever = Retriever(embedder, store)
     logger = ConversationLogger(model="gpt-4o-mini")
 
-    print(f"Knowledge base loaded: {store.count()} chunks.")
-    print("Ask a question about your notes.")
-    print("Type 'exit' or 'quit' to stop.\n")
+    print(f"  Chunks indexed : {store.count()}")
+    print(f"  Top-k          : {args.k}")
+    print(f"  Threshold      : {args.threshold}")
+    print(f"  Debug mode     : {'on' if args.debug else 'off'}")
+    print("-" * 60)
+    print("Ask a question about your notes. Type 'exit' or 'quit' to stop.\n")
 
     while True:
         try:

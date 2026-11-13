@@ -66,13 +66,15 @@ def main():
     }
 
     deleted_sources = set(old_cache) - set(current_hashes)
+    unchanged_count = len(current_hashes) - len(changed_sources)
 
-    print(f"New/changed files: {len(changed_sources)}")
-    print(f"Deleted files: {len(deleted_sources)}")
-    print(
-        f"Unchanged files: "
-        f"{len(current_hashes) - len(changed_sources)}"
-    )
+    print("=" * 60)
+    print("  Ingest Summary")
+    print("=" * 60)
+    print(f"  {'New / changed files':<26}: {len(changed_sources)}")
+    print(f"  {'Deleted files':<26}: {len(deleted_sources)}")
+    print(f"  {'Unchanged files (skipped)':<26}: {unchanged_count}")
+    print("-" * 60)
 
     # 4. Initialize vector store
     store = VectorStore()
@@ -80,9 +82,9 @@ def main():
     # Delete old chunks for changed or deleted sources
     sources_to_delete = changed_sources | deleted_sources
 
-    for source in sources_to_delete:
+    for source in sorted(sources_to_delete):
         store.delete_by_source(source)
-        print(f"Deleted old chunks: {source}")
+        print(f"  Removed stale chunks: {Path(source).name}")
 
     # 5. Load documents
     records = load_txt_or_md(raw_dir)
@@ -94,8 +96,6 @@ def main():
         for record in records
         if record["source"] in changed_sources
     ]
-
-    print(f"Records to process: {len(records)}")
 
     # 6. Chunk documents
     all_chunks = []
@@ -110,7 +110,9 @@ def main():
             )
         )
 
-    print(f"Generated chunks: {len(all_chunks)}")
+    print("-" * 60)
+    print(f"  {'Documents to process':<26}: {len(records)}")
+    print(f"  {'Chunks generated':<26}: {len(all_chunks)}")
 
     # 7. Embed and upsert
     if all_chunks:
@@ -149,8 +151,9 @@ def main():
     # Only reached if ingestion has completed successfully.
     save_hash_cache(current_hashes)
 
-    print("Ingestion complete!")
-    print(f"Total chunks in ChromaDB: {store.count()}")
+    print("=" * 60)
+    print(f"  Ingestion complete - {store.count()} total chunks in ChromaDB")
+    print("=" * 60)
 
 
 if __name__ == "__main__":
