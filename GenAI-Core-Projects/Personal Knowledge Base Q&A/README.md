@@ -202,7 +202,7 @@ Cases below).
   informal, inconsistent writing personal notes usually contain.
 - No multi-turn conversation memory - each question in `ask.py` is retrieved and
   answered independently, with no reference to prior turns in the session.
-- `_interface_map.py` and `experiments.py` / `grade_answers.py` are development/
+- `experiments.py` / `grade_answers.py` are development/
   analysis scaffolding, not part of the shipped pipeline (`ingest.py` + `ask.py` +
   `src/`).
 
