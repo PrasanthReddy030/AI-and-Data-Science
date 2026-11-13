@@ -35,6 +35,11 @@ ds_env/
 *.faiss
 index/*.npy
 
+# ChromaDB persistent stores and ingest state — regenerate by running ingest.py
+chroma_db/
+data/experiments/*/
+ingest_hashes.json
+
 # W&B local run logs
 wandb/
 

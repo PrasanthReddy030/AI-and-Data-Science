@@ -1,0 +1,200 @@
+[
+  {
+    "id": 1,
+    "question": "What is Faiss and what kind of search problem is it designed for?",
+    "expected_sources": ["faiss_README.md"],
+    "retrieved_sources": ["faiss_README.md", "raft_consensus_algorithm.pdf"],
+    "answer": "Faiss is a library for efficient similarity search and clustering of dense vectors. It is designed to handle search problems involving sets of vectors of any size, including those that may not fit in RAM. Faiss allows for the comparison of vectors using L2 (Euclidean) distances or dot products, and it also supports cosine similarity on normalized vectors. The library is primarily developed at Meta's Fundamental AI Research group and is implemented in C++ with wrappers for Python/numpy [1, p.N/A].",
+    "verdict": "correct",
+    "reason": "Matches the real faiss_README.md content exactly (similarity search, dense vectors, Meta FAIR, C++/Python). The extra retrieved source (raft paper) was ignored by the model and didn't leak into the answer - good grounding discipline."
+  },
+  {
+    "id": 2,
+    "question": "What company develops Faiss, and what group within it?",
+    "expected_sources": ["faiss_README.md"],
+    "retrieved_sources": ["faiss_README.md"],
+    "answer": "Faiss is developed primarily at Meta Platforms, Inc., specifically within the Fundamental AI Research group [source, p.N/A].",
+    "verdict": "correct",
+    "reason": "Matches the README's stated attribution. Clean single-source retrieval, no extraneous info."
+  },
+  {
+    "id": 3,
+    "question": "What is Chroma, according to its own README?",
+    "expected_sources": ["chroma_README.md"],
+    "retrieved_sources": ["chroma_README.md"],
+    "answer": "Chroma is described as \"the open-source data infrastructure for AI\" in its README [source: chroma_README.md, p.N/A].",
+    "verdict": "correct",
+    "reason": "Direct quote of the README's own tagline. Matches."
+  },
+  {
+    "id": 4,
+    "question": "What does FastAPI claim as its key selling points as a web framework?",
+    "expected_sources": ["fastapi_README.md"],
+    "retrieved_sources": ["fastapi_README.md", "tracemonkey_jit_paper.pdf"],
+    "answer": "FastAPI claims several key selling points as a web framework: 1. It streamlines the process of building, deploying, and accessing an API with minimal effort... 2. FastAPI applications running under Uvicorn are shown to be among the fastest Python frameworks available, only below Starlette and Uvicorn themselves... 3. It provides automatic interactive API documentation... 4. FastAPI automatically validates request data and converts between Python data types and network data formats...",
+    "verdict": "correct",
+    "reason": "All four points are real, well-known FastAPI README claims (performance benchmarks vs Starlette/Uvicorn, Swagger/ReDoc docs, pydantic-based validation). The unrelated tracemonkey PDF was retrieved but correctly ignored in the answer."
+  },
+  {
+    "id": 5,
+    "question": "What is Kubernetes (K8s) used for, in one sentence?",
+    "expected_sources": ["kubernetes_README.md"],
+    "retrieved_sources": ["kubernetes_README.md"],
+    "answer": "Kubernetes (K8s) is used for managing containerized applications across multiple hosts, providing basic mechanisms for the deployment, maintenance, and scaling of applications [1, p.N/A].",
+    "verdict": "correct",
+    "reason": "Near-verbatim match to the actual README opening description."
+  },
+  {
+    "id": 6,
+    "question": "What does the OpenAI Python library provide, and what minimum Python version does it require?",
+    "expected_sources": ["openai_python_README.md"],
+    "retrieved_sources": ["genai_for_beginners_README.md", "openai_python_README.md"],
+    "answer": "The OpenAI Python library provides convenient access to the OpenAI REST API from any Python 3.10+ application. It includes type definitions for all request parameters and response fields, and offers both synchronous and asynchronous clients powered by HTTPX2 [source, p.N/A]. The minimum supported Python version is 3.10 or higher [source, p.N/A].",
+    "verdict": "correct",
+    "reason": "Matches the real README text (Python 3.10+, HTTPX2, type definitions, sync/async clients). Unrelated genai_for_beginners source was retrieved but not used in the answer."
+  },
+  {
+    "id": 7,
+    "question": "What problem does the Requests library solve for Python developers?",
+    "expected_sources": ["psf_requests_README.md"],
+    "retrieved_sources": ["openai_python_README.md", "pep_0008_style_guide.txt", "psf_requests_README.md"],
+    "answer": "The Requests library solves the problem of sending HTTP/1.1 requests easily for Python developers. It eliminates the need to manually add query strings to URLs or to form-encode PUT and POST data, allowing developers to use the json method instead for convenience. This makes it simpler to build robust and reliable HTTP-speaking applications [1, p.N/A].",
+    "verdict": "correct",
+    "reason": "Matches the real Requests README description almost verbatim. Despite 2 unrelated sources also being retrieved (k=4 pulled in noise), the model stayed grounded in the one relevant chunk."
+  },
+  {
+    "id": 8,
+    "question": "According to the Zen of Python, is explicit or implicit code considered better?",
+    "expected_sources": ["pep_0020_zen_of_python.txt"],
+    "retrieved_sources": ["pep_0008_style_guide.txt", "pep_0020_zen_of_python.txt", "pep_0484_type_hints.txt"],
+    "answer": "According to the Zen of Python, \"Explicit is better than implicit\" [1, p.N/A].",
+    "verdict": "correct",
+    "reason": "Exact quote from the real PEP 20 text. Simple, correctly grounded, no hallucination despite other PEPs being retrieved alongside it."
+  },
+  {
+    "id": 9,
+    "question": "Who are the authors of PEP 257, the docstring conventions PEP?",
+    "expected_sources": ["pep_0257_docstrings.txt"],
+    "retrieved_sources": ["pep_0008_style_guide.txt", "pep_0257_docstrings.txt"],
+    "answer": "The authors of PEP 257, the docstring conventions PEP, are David Goodger and Guido van Rossum [1, p.N/A].",
+    "verdict": "correct",
+    "reason": "Matches the real PEP 257 header (David Goodger, Guido van Rossum). Factual recall task, nailed it."
+  },
+  {
+    "id": 10,
+    "question": "What two things should a good CL (changelist) description communicate, according to the Google engineering practices doc?",
+    "expected_sources": ["google_eng_practices_cl_descriptions.md"],
+    "retrieved_sources": ["google_eng_practices_cl_descriptions.md", "google_eng_practices_reviewer_standard.md"],
+    "answer": "A good CL (changelist) description should communicate: 1. What change is being made... 2. Why are these changes being made...",
+    "verdict": "correct",
+    "reason": "Matches the real doc's two numbered points (what and why) precisely."
+  },
+  {
+    "id": 11,
+    "question": "What is the primary purpose of code review, according to the Google code review standard doc?",
+    "expected_sources": ["google_eng_practices_reviewer_standard.md"],
+    "retrieved_sources": ["google_eng_practices_cl_descriptions.md", "google_eng_practices_reviewer_standard.md"],
+    "answer": "The primary purpose of code review, according to the Google code review standard document, is to make sure that the overall code health of Google's codebase is improving over time...",
+    "verdict": "correct",
+    "reason": "Matches the real doc's opening statement almost verbatim."
+  },
+  {
+    "id": 12,
+    "question": "What problem does the Raft consensus algorithm solve in distributed systems?",
+    "expected_sources": ["raft_consensus_algorithm.pdf"],
+    "retrieved_sources": ["raft_consensus_algorithm.pdf"],
+    "answer": "The Raft consensus algorithm solves the problem of managing a replicated log in distributed systems. It allows a collection of machines to work as a coherent group that can survive the failures of some of its members...",
+    "verdict": "correct",
+    "reason": "Accurately reflects Raft's actual purpose (replicated log consensus, fault tolerance) as stated in the paper's abstract/intro."
+  },
+  {
+    "id": 13,
+    "question": "What is the core idea behind Amazon's Dynamo key-value store, and what consistency model does it emphasize?",
+    "expected_sources": ["dynamo_amazon_key_value_store.pdf"],
+    "retrieved_sources": ["dynamo_amazon_key_value_store.pdf"],
+    "answer": "The core idea behind Amazon's Dynamo key-value store is to provide a highly available and scalable data store... Dynamo emphasizes a consistency model that operates with weaker consistency guarantees, allowing for high availability...",
+    "verdict": "correct",
+    "reason": "Matches Dynamo's actual design goals (high availability over strict consistency, eventual consistency, single-key updates, no multi-key transactions) as described in the real paper."
+  },
+  {
+    "id": 14,
+    "question": "What problem is the Google File System (GFS) paper designed to address?",
+    "expected_sources": ["google_file_system.pdf"],
+    "retrieved_sources": ["dynamo_amazon_key_value_store.pdf", "google_file_system.pdf"],
+    "answer": "The Google File System (GFS) paper is designed to address the rapidly growing demands of Google's data processing needs. It aims to provide a scalable distributed file system for large distributed data-intensive applications...",
+    "verdict": "correct",
+    "reason": "Matches GFS's real stated motivation (scalable distributed storage, commodity hardware, fault tolerance, high throughput for large files). The unrelated Dynamo source didn't bleed into the answer."
+  },
+  {
+    "id": 15,
+    "question": "What is the double-spending problem that the Bitcoin whitepaper proposes to solve, and what is the proposed solution?",
+    "expected_sources": ["bitcoin_whitepaper.pdf"],
+    "retrieved_sources": ["bitcoin_whitepaper.pdf"],
+    "answer": "The double-spending problem refers to the issue where a digital coin can be spent more than once... The proposed solution in the Bitcoin whitepaper is to use a peer-to-peer network... a distributed timestamp server that generates computational proof of the chronological order of transactions. The system is secure as long as a majority of CPU power is controlled by honest nodes...",
+    "verdict": "correct",
+    "reason": "Accurately describes the real double-spending problem and Bitcoin's actual proof-of-work/longest-chain solution as stated in the whitepaper's abstract."
+  },
+  {
+    "id": 16,
+    "question": "What is the capital of France?",
+    "expected_sources": [],
+    "retrieved_sources": ["google_file_system.pdf"],
+    "answer": "I couldn't find this in your notes.",
+    "verdict": "correct",
+    "reason": "Out-of-corpus control - correctly refused to answer even though one chunk (GFS) weakly cleared the similarity threshold. The generator's grounding rule caught what the threshold alone didn't fully filter out. This is the system working as designed, not a retrieval failure."
+  },
+  {
+    "id": 17,
+    "question": "What were Microsoft's quarterly earnings last year?",
+    "expected_sources": [],
+    "retrieved_sources": [],
+    "answer": "I couldn't find this in your notes.",
+    "verdict": "correct",
+    "reason": "Out-of-corpus control - no chunks cleared the threshold at all, so the LLM was never called. Exactly the intended short-circuit behavior from Step 13."
+  },
+  {
+    "id": 18,
+    "question": "How does a system decide which replica's version of the data should win when two nodes disagree after a network partition?",
+    "expected_sources": ["dynamo_amazon_key_value_store.pdf", "raft_consensus_algorithm.pdf"],
+    "retrieved_sources": ["dynamo_amazon_key_value_store.pdf", "google_file_system.pdf"],
+    "answer": "I couldn't find this in your notes.",
+    "verdict": "partial",
+    "reason": "RETRIEVAL FAILURE, not a generation failure - the model correctly refused to answer from irrelevant context (GFS doesn't cover conflict resolution), but the real answer (Dynamo's vector-clock-based conflict resolution, or Raft's leader-based log consistency) was never surfaced because Raft didn't make it into top-k and GFS crowded out a second Dynamo chunk. The generator did the right thing given bad input - the fix belongs in retrieval (larger k, or hybrid/keyword-assisted retrieval for ambiguous queries), not in the prompt. Marked 'partial' rather than 'hallucinated' since it correctly abstained instead of making something up."
+  },
+  {
+    "id": 19,
+    "question": "What tool would help me track experiment metrics and model versions when I'm training machine learning models?",
+    "expected_sources": ["mlflow_README.md"],
+    "retrieved_sources": ["mlflow_README.md", "tidy_data_wickham.pdf"],
+    "answer": "MLflow would help you track experiment metrics and model versions when training machine learning models. It enables teams to debug, evaluate, monitor, and optimize production-quality AI applications while controlling costs and managing access to models and data [1, p.N/A].",
+    "verdict": "correct",
+    "reason": "Correctly identified MLflow purely from a paraphrased description with no product name in the question - good evidence that embedding-based retrieval is doing real semantic matching here, not just keyword overlap. Matches the real MLflow README framing."
+  },
+  {
+    "id": 20,
+    "question": "What technique involves showing a language model a few example input-output pairs directly in the prompt, without retraining it?",
+    "expected_sources": ["prompt_eng_guide_basics.md"],
+    "retrieved_sources": ["prompt_eng_guide_basics.md", "prompt_eng_guide_intro.md"],
+    "answer": "The technique that involves showing a language model a few example input-output pairs directly in the prompt, without retraining it, is referred to as \"few-shot prompting\" [1, p.N/A].",
+    "verdict": "correct",
+    "reason": "Correctly named few-shot prompting from a paraphrased definition with no exact terminology in the question. Confirms retrieval generalizes beyond literal keyword matching."
+  },
+  {
+    "id": 21,
+    "question": "What does the project say about writing containers and running them across a cluster of machines?",
+    "expected_sources": ["kubernetes_README.md", "moby_README.md"],
+    "retrieved_sources": ["google_file_system.pdf", "kubernetes_README.md"],
+    "answer": "I couldn't find this in your notes.",
+    "verdict": "partial",
+    "reason": "RETRIEVAL FAILURE, not generation - kubernetes_README.md WAS retrieved (half the expected sources), but moby_README.md (Docker/container runtime) was not, and the model judged the Kubernetes chunk alone insufficient to directly answer 'writing containers' (K8s orchestrates containers, Moby builds/runs them - different angle). The model correctly refused rather than guessing. This is the same ambiguous-query pattern as Q18: the question spans two docs and k wasn't large enough (or the docs' relevant chunks didn't rank high enough) to pull in both. Marked 'partial' since the refusal was honest, not fabricated."
+  },
+  {
+    "id": 22,
+    "question": "What principle from Python's design philosophy would apply if I'm deciding between a clever one-liner and a longer but clearer piece of code?",
+    "expected_sources": ["pep_0020_zen_of_python.txt"],
+    "retrieved_sources": ["pep_0008_style_guide.txt", "pep_0020_zen_of_python.txt"],
+    "answer": "The principle from Python's design philosophy that would apply in this situation is \"Readability counts,\" which emphasizes the importance of writing code that is clear and easy to understand, even if it means opting for a longer solution instead of a clever one-liner [2, p.N/A].",
+    "verdict": "correct",
+    "reason": "\"Readability counts\" is a real, direct line from the Zen of Python, and it's the most relevant aphorism to this specific tradeoff (arguably more apt than \"Explicit is better than implicit\" or \"Simple is better than complex\"). Good evidence the model picked the single best-fitting line rather than just the first one retrieved."
+  }
+]

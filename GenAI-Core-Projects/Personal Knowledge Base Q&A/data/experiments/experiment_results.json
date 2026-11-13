@@ -1,0 +1,2485 @@
+[
+  {
+    "chunk_size": 500,
+    "overlap": 50,
+    "strategy": "fixed",
+    "k": 4,
+    "threshold": 0.3,
+    "hits": 20,
+    "misses": 0,
+    "total_questions": 20,
+    "hit_rate": 1.0,
+    "question_results": [
+      {
+        "id": 1,
+        "question": "What is Faiss and what kind of search problem is it designed for?",
+        "expected_sources": [
+          "faiss_readme.md"
+        ],
+        "retrieved_sources": [
+          "faiss_readme.md",
+          "raft_consensus_algorithm.pdf"
+        ],
+        "matched_sources": [
+          "faiss_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 2,
+        "question": "What company develops Faiss, and what group within it?",
+        "expected_sources": [
+          "faiss_readme.md"
+        ],
+        "retrieved_sources": [
+          "faiss_readme.md"
+        ],
+        "matched_sources": [
+          "faiss_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 3,
+        "question": "What is Chroma, according to its own README?",
+        "expected_sources": [
+          "chroma_readme.md"
+        ],
+        "retrieved_sources": [
+          "chroma_readme.md"
+        ],
+        "matched_sources": [
+          "chroma_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 4,
+        "question": "What does FastAPI claim as its key selling points as a web framework?",
+        "expected_sources": [
+          "fastapi_readme.md"
+        ],
+        "retrieved_sources": [
+          "fastapi_readme.md",
+          "tracemonkey_jit_paper.pdf"
+        ],
+        "matched_sources": [
+          "fastapi_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 5,
+        "question": "What is Kubernetes (K8s) used for, in one sentence?",
+        "expected_sources": [
+          "kubernetes_readme.md"
+        ],
+        "retrieved_sources": [
+          "kubernetes_readme.md"
+        ],
+        "matched_sources": [
+          "kubernetes_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 6,
+        "question": "What does the OpenAI Python library provide, and what minimum Python version does it require?",
+        "expected_sources": [
+          "openai_python_readme.md"
+        ],
+        "retrieved_sources": [
+          "genai_for_beginners_readme.md",
+          "openai_python_readme.md"
+        ],
+        "matched_sources": [
+          "openai_python_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 7,
+        "question": "What problem does the Requests library solve for Python developers?",
+        "expected_sources": [
+          "psf_requests_readme.md"
+        ],
+        "retrieved_sources": [
+          "openai_python_readme.md",
+          "pep_0008_style_guide.txt",
+          "psf_requests_readme.md"
+        ],
+        "matched_sources": [
+          "psf_requests_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 8,
+        "question": "According to the Zen of Python, is explicit or implicit code considered better?",
+        "expected_sources": [
+          "pep_0020_zen_of_python.txt"
+        ],
+        "retrieved_sources": [
+          "pep_0008_style_guide.txt",
+          "pep_0020_zen_of_python.txt",
+          "pep_0484_type_hints.txt"
+        ],
+        "matched_sources": [
+          "pep_0020_zen_of_python.txt"
+        ],
+        "hit": true
+      },
+      {
+        "id": 9,
+        "question": "Who are the authors of PEP 257, the docstring conventions PEP?",
+        "expected_sources": [
+          "pep_0257_docstrings.txt"
+        ],
+        "retrieved_sources": [
+          "pep_0008_style_guide.txt",
+          "pep_0257_docstrings.txt"
+        ],
+        "matched_sources": [
+          "pep_0257_docstrings.txt"
+        ],
+        "hit": true
+      },
+      {
+        "id": 10,
+        "question": "What two things should a good CL (changelist) description communicate, according to the Google engineering practices doc?",
+        "expected_sources": [
+          "google_eng_practices_cl_descriptions.md"
+        ],
+        "retrieved_sources": [
+          "google_eng_practices_cl_descriptions.md",
+          "google_eng_practices_reviewer_standard.md"
+        ],
+        "matched_sources": [
+          "google_eng_practices_cl_descriptions.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 11,
+        "question": "What is the primary purpose of code review, according to the Google code review standard doc?",
+        "expected_sources": [
+          "google_eng_practices_reviewer_standard.md"
+        ],
+        "retrieved_sources": [
+          "google_eng_practices_cl_descriptions.md",
+          "google_eng_practices_reviewer_standard.md"
+        ],
+        "matched_sources": [
+          "google_eng_practices_reviewer_standard.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 12,
+        "question": "What problem does the Raft consensus algorithm solve in distributed systems?",
+        "expected_sources": [
+          "raft_consensus_algorithm.pdf"
+        ],
+        "retrieved_sources": [
+          "raft_consensus_algorithm.pdf"
+        ],
+        "matched_sources": [
+          "raft_consensus_algorithm.pdf"
+        ],
+        "hit": true
+      },
+      {
+        "id": 13,
+        "question": "What is the core idea behind Amazon's Dynamo key-value store, and what consistency model does it emphasize?",
+        "expected_sources": [
+          "dynamo_amazon_key_value_store.pdf"
+        ],
+        "retrieved_sources": [
+          "dynamo_amazon_key_value_store.pdf"
+        ],
+        "matched_sources": [
+          "dynamo_amazon_key_value_store.pdf"
+        ],
+        "hit": true
+      },
+      {
+        "id": 14,
+        "question": "What problem is the Google File System (GFS) paper designed to address?",
+        "expected_sources": [
+          "google_file_system.pdf"
+        ],
+        "retrieved_sources": [
+          "dynamo_amazon_key_value_store.pdf",
+          "google_file_system.pdf"
+        ],
+        "matched_sources": [
+          "google_file_system.pdf"
+        ],
+        "hit": true
+      },
+      {
+        "id": 15,
+        "question": "What is the double-spending problem that the Bitcoin whitepaper proposes to solve, and what is the proposed solution?",
+        "expected_sources": [
+          "bitcoin_whitepaper.pdf"
+        ],
+        "retrieved_sources": [
+          "bitcoin_whitepaper.pdf"
+        ],
+        "matched_sources": [
+          "bitcoin_whitepaper.pdf"
+        ],
+        "hit": true
+      },
+      {
+        "id": 18,
+        "question": "How does a system decide which replica's version of the data should win when two nodes disagree after a network partition?",
+        "expected_sources": [
+          "dynamo_amazon_key_value_store.pdf",
+          "raft_consensus_algorithm.pdf"
+        ],
+        "retrieved_sources": [
+          "dynamo_amazon_key_value_store.pdf",
+          "google_file_system.pdf"
+        ],
+        "matched_sources": [
+          "dynamo_amazon_key_value_store.pdf"
+        ],
+        "hit": true
+      },
+      {
+        "id": 19,
+        "question": "What tool would help me track experiment metrics and model versions when I'm training machine learning models?",
+        "expected_sources": [
+          "mlflow_readme.md"
+        ],
+        "retrieved_sources": [
+          "mlflow_readme.md",
+          "tidy_data_wickham.pdf"
+        ],
+        "matched_sources": [
+          "mlflow_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 20,
+        "question": "What technique involves showing a language model a few example input-output pairs directly in the prompt, without retraining it?",
+        "expected_sources": [
+          "prompt_eng_guide_basics.md"
+        ],
+        "retrieved_sources": [
+          "prompt_eng_guide_basics.md",
+          "prompt_eng_guide_intro.md"
+        ],
+        "matched_sources": [
+          "prompt_eng_guide_basics.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 21,
+        "question": "What does the project say about writing containers and running them across a cluster of machines?",
+        "expected_sources": [
+          "kubernetes_readme.md",
+          "moby_readme.md"
+        ],
+        "retrieved_sources": [
+          "google_file_system.pdf",
+          "kubernetes_readme.md"
+        ],
+        "matched_sources": [
+          "kubernetes_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 22,
+        "question": "What principle from Python's design philosophy would apply if I'm deciding between a clever one-liner and a longer but clearer piece of code?",
+        "expected_sources": [
+          "pep_0020_zen_of_python.txt"
+        ],
+        "retrieved_sources": [
+          "pep_0008_style_guide.txt",
+          "pep_0020_zen_of_python.txt"
+        ],
+        "matched_sources": [
+          "pep_0020_zen_of_python.txt"
+        ],
+        "hit": true
+      }
+    ]
+  },
+  {
+    "chunk_size": 200,
+    "overlap": 50,
+    "strategy": "fixed",
+    "k": 4,
+    "threshold": 0.3,
+    "hits": 19,
+    "misses": 1,
+    "total_questions": 20,
+    "hit_rate": 0.95,
+    "question_results": [
+      {
+        "id": 1,
+        "question": "What is Faiss and what kind of search problem is it designed for?",
+        "expected_sources": [
+          "faiss_readme.md"
+        ],
+        "retrieved_sources": [
+          "faiss_readme.md"
+        ],
+        "matched_sources": [
+          "faiss_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 2,
+        "question": "What company develops Faiss, and what group within it?",
+        "expected_sources": [
+          "faiss_readme.md"
+        ],
+        "retrieved_sources": [
+          "faiss_readme.md"
+        ],
+        "matched_sources": [
+          "faiss_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 3,
+        "question": "What is Chroma, according to its own README?",
+        "expected_sources": [
+          "chroma_readme.md"
+        ],
+        "retrieved_sources": [
+          "chroma_readme.md"
+        ],
+        "matched_sources": [
+          "chroma_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 4,
+        "question": "What does FastAPI claim as its key selling points as a web framework?",
+        "expected_sources": [
+          "fastapi_readme.md"
+        ],
+        "retrieved_sources": [
+          "fastapi_readme.md"
+        ],
+        "matched_sources": [
+          "fastapi_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 5,
+        "question": "What is Kubernetes (K8s) used for, in one sentence?",
+        "expected_sources": [
+          "kubernetes_readme.md"
+        ],
+        "retrieved_sources": [
+          "kubernetes_readme.md"
+        ],
+        "matched_sources": [
+          "kubernetes_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 6,
+        "question": "What does the OpenAI Python library provide, and what minimum Python version does it require?",
+        "expected_sources": [
+          "openai_python_readme.md"
+        ],
+        "retrieved_sources": [
+          "openai_python_readme.md"
+        ],
+        "matched_sources": [
+          "openai_python_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 7,
+        "question": "What problem does the Requests library solve for Python developers?",
+        "expected_sources": [
+          "psf_requests_readme.md"
+        ],
+        "retrieved_sources": [
+          "pep_0020_zen_of_python.txt",
+          "psf_requests_readme.md"
+        ],
+        "matched_sources": [
+          "psf_requests_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 8,
+        "question": "According to the Zen of Python, is explicit or implicit code considered better?",
+        "expected_sources": [
+          "pep_0020_zen_of_python.txt"
+        ],
+        "retrieved_sources": [
+          "pep_0008_style_guide.txt",
+          "pep_0020_zen_of_python.txt",
+          "pep_0484_type_hints.txt"
+        ],
+        "matched_sources": [
+          "pep_0020_zen_of_python.txt"
+        ],
+        "hit": true
+      },
+      {
+        "id": 9,
+        "question": "Who are the authors of PEP 257, the docstring conventions PEP?",
+        "expected_sources": [
+          "pep_0257_docstrings.txt"
+        ],
+        "retrieved_sources": [
+          "pep_0008_style_guide.txt",
+          "pep_0257_docstrings.txt",
+          "pep_0484_type_hints.txt"
+        ],
+        "matched_sources": [
+          "pep_0257_docstrings.txt"
+        ],
+        "hit": true
+      },
+      {
+        "id": 10,
+        "question": "What two things should a good CL (changelist) description communicate, according to the Google engineering practices doc?",
+        "expected_sources": [
+          "google_eng_practices_cl_descriptions.md"
+        ],
+        "retrieved_sources": [
+          "google_eng_practices_cl_descriptions.md"
+        ],
+        "matched_sources": [
+          "google_eng_practices_cl_descriptions.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 11,
+        "question": "What is the primary purpose of code review, according to the Google code review standard doc?",
+        "expected_sources": [
+          "google_eng_practices_reviewer_standard.md"
+        ],
+        "retrieved_sources": [
+          "google_eng_practices_reviewer_standard.md"
+        ],
+        "matched_sources": [
+          "google_eng_practices_reviewer_standard.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 12,
+        "question": "What problem does the Raft consensus algorithm solve in distributed systems?",
+        "expected_sources": [
+          "raft_consensus_algorithm.pdf"
+        ],
+        "retrieved_sources": [
+          "raft_consensus_algorithm.pdf"
+        ],
+        "matched_sources": [
+          "raft_consensus_algorithm.pdf"
+        ],
+        "hit": true
+      },
+      {
+        "id": 13,
+        "question": "What is the core idea behind Amazon's Dynamo key-value store, and what consistency model does it emphasize?",
+        "expected_sources": [
+          "dynamo_amazon_key_value_store.pdf"
+        ],
+        "retrieved_sources": [
+          "dynamo_amazon_key_value_store.pdf"
+        ],
+        "matched_sources": [
+          "dynamo_amazon_key_value_store.pdf"
+        ],
+        "hit": true
+      },
+      {
+        "id": 14,
+        "question": "What problem is the Google File System (GFS) paper designed to address?",
+        "expected_sources": [
+          "google_file_system.pdf"
+        ],
+        "retrieved_sources": [
+          "dynamo_amazon_key_value_store.pdf",
+          "google_file_system.pdf"
+        ],
+        "matched_sources": [
+          "google_file_system.pdf"
+        ],
+        "hit": true
+      },
+      {
+        "id": 15,
+        "question": "What is the double-spending problem that the Bitcoin whitepaper proposes to solve, and what is the proposed solution?",
+        "expected_sources": [
+          "bitcoin_whitepaper.pdf"
+        ],
+        "retrieved_sources": [
+          "bitcoin_whitepaper.pdf"
+        ],
+        "matched_sources": [
+          "bitcoin_whitepaper.pdf"
+        ],
+        "hit": true
+      },
+      {
+        "id": 18,
+        "question": "How does a system decide which replica's version of the data should win when two nodes disagree after a network partition?",
+        "expected_sources": [
+          "dynamo_amazon_key_value_store.pdf",
+          "raft_consensus_algorithm.pdf"
+        ],
+        "retrieved_sources": [
+          "google_file_system.pdf",
+          "raft_consensus_algorithm.pdf"
+        ],
+        "matched_sources": [
+          "raft_consensus_algorithm.pdf"
+        ],
+        "hit": true
+      },
+      {
+        "id": 19,
+        "question": "What tool would help me track experiment metrics and model versions when I'm training machine learning models?",
+        "expected_sources": [
+          "mlflow_readme.md"
+        ],
+        "retrieved_sources": [
+          "mlflow_readme.md"
+        ],
+        "matched_sources": [
+          "mlflow_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 20,
+        "question": "What technique involves showing a language model a few example input-output pairs directly in the prompt, without retraining it?",
+        "expected_sources": [
+          "prompt_eng_guide_basics.md"
+        ],
+        "retrieved_sources": [
+          "prompt_eng_guide_intro.md"
+        ],
+        "matched_sources": [],
+        "hit": false
+      },
+      {
+        "id": 21,
+        "question": "What does the project say about writing containers and running them across a cluster of machines?",
+        "expected_sources": [
+          "kubernetes_readme.md",
+          "moby_readme.md"
+        ],
+        "retrieved_sources": [
+          "google_file_system.pdf",
+          "kubernetes_readme.md"
+        ],
+        "matched_sources": [
+          "kubernetes_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 22,
+        "question": "What principle from Python's design philosophy would apply if I'm deciding between a clever one-liner and a longer but clearer piece of code?",
+        "expected_sources": [
+          "pep_0020_zen_of_python.txt"
+        ],
+        "retrieved_sources": [
+          "pep_0008_style_guide.txt",
+          "pep_0020_zen_of_python.txt"
+        ],
+        "matched_sources": [
+          "pep_0020_zen_of_python.txt"
+        ],
+        "hit": true
+      }
+    ]
+  },
+  {
+    "chunk_size": 1000,
+    "overlap": 50,
+    "strategy": "fixed",
+    "k": 4,
+    "threshold": 0.3,
+    "hits": 20,
+    "misses": 0,
+    "total_questions": 20,
+    "hit_rate": 1.0,
+    "question_results": [
+      {
+        "id": 1,
+        "question": "What is Faiss and what kind of search problem is it designed for?",
+        "expected_sources": [
+          "faiss_readme.md"
+        ],
+        "retrieved_sources": [
+          "faiss_readme.md",
+          "google_file_system.pdf",
+          "raft_consensus_algorithm.pdf"
+        ],
+        "matched_sources": [
+          "faiss_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 2,
+        "question": "What company develops Faiss, and what group within it?",
+        "expected_sources": [
+          "faiss_readme.md"
+        ],
+        "retrieved_sources": [
+          "faiss_readme.md"
+        ],
+        "matched_sources": [
+          "faiss_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 3,
+        "question": "What is Chroma, according to its own README?",
+        "expected_sources": [
+          "chroma_readme.md"
+        ],
+        "retrieved_sources": [
+          "chroma_readme.md"
+        ],
+        "matched_sources": [
+          "chroma_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 4,
+        "question": "What does FastAPI claim as its key selling points as a web framework?",
+        "expected_sources": [
+          "fastapi_readme.md"
+        ],
+        "retrieved_sources": [
+          "fastapi_readme.md",
+          "tracemonkey_jit_paper.pdf"
+        ],
+        "matched_sources": [
+          "fastapi_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 5,
+        "question": "What is Kubernetes (K8s) used for, in one sentence?",
+        "expected_sources": [
+          "kubernetes_readme.md"
+        ],
+        "retrieved_sources": [
+          "kubernetes_readme.md"
+        ],
+        "matched_sources": [
+          "kubernetes_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 6,
+        "question": "What does the OpenAI Python library provide, and what minimum Python version does it require?",
+        "expected_sources": [
+          "openai_python_readme.md"
+        ],
+        "retrieved_sources": [
+          "mlflow_readme.md",
+          "openai_python_readme.md"
+        ],
+        "matched_sources": [
+          "openai_python_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 7,
+        "question": "What problem does the Requests library solve for Python developers?",
+        "expected_sources": [
+          "psf_requests_readme.md"
+        ],
+        "retrieved_sources": [
+          "fastapi_readme.md",
+          "openai_python_readme.md",
+          "pep_0008_style_guide.txt",
+          "psf_requests_readme.md"
+        ],
+        "matched_sources": [
+          "psf_requests_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 8,
+        "question": "According to the Zen of Python, is explicit or implicit code considered better?",
+        "expected_sources": [
+          "pep_0020_zen_of_python.txt"
+        ],
+        "retrieved_sources": [
+          "pep_0008_style_guide.txt",
+          "pep_0020_zen_of_python.txt",
+          "pep_0484_type_hints.txt"
+        ],
+        "matched_sources": [
+          "pep_0020_zen_of_python.txt"
+        ],
+        "hit": true
+      },
+      {
+        "id": 9,
+        "question": "Who are the authors of PEP 257, the docstring conventions PEP?",
+        "expected_sources": [
+          "pep_0257_docstrings.txt"
+        ],
+        "retrieved_sources": [
+          "pep_0008_style_guide.txt",
+          "pep_0257_docstrings.txt"
+        ],
+        "matched_sources": [
+          "pep_0257_docstrings.txt"
+        ],
+        "hit": true
+      },
+      {
+        "id": 10,
+        "question": "What two things should a good CL (changelist) description communicate, according to the Google engineering practices doc?",
+        "expected_sources": [
+          "google_eng_practices_cl_descriptions.md"
+        ],
+        "retrieved_sources": [
+          "google_eng_practices_cl_descriptions.md",
+          "google_eng_practices_reviewer_standard.md",
+          "prompt_eng_guide_basics.md"
+        ],
+        "matched_sources": [
+          "google_eng_practices_cl_descriptions.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 11,
+        "question": "What is the primary purpose of code review, according to the Google code review standard doc?",
+        "expected_sources": [
+          "google_eng_practices_reviewer_standard.md"
+        ],
+        "retrieved_sources": [
+          "google_eng_practices_reviewer_standard.md"
+        ],
+        "matched_sources": [
+          "google_eng_practices_reviewer_standard.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 12,
+        "question": "What problem does the Raft consensus algorithm solve in distributed systems?",
+        "expected_sources": [
+          "raft_consensus_algorithm.pdf"
+        ],
+        "retrieved_sources": [
+          "raft_consensus_algorithm.pdf"
+        ],
+        "matched_sources": [
+          "raft_consensus_algorithm.pdf"
+        ],
+        "hit": true
+      },
+      {
+        "id": 13,
+        "question": "What is the core idea behind Amazon's Dynamo key-value store, and what consistency model does it emphasize?",
+        "expected_sources": [
+          "dynamo_amazon_key_value_store.pdf"
+        ],
+        "retrieved_sources": [
+          "dynamo_amazon_key_value_store.pdf"
+        ],
+        "matched_sources": [
+          "dynamo_amazon_key_value_store.pdf"
+        ],
+        "hit": true
+      },
+      {
+        "id": 14,
+        "question": "What problem is the Google File System (GFS) paper designed to address?",
+        "expected_sources": [
+          "google_file_system.pdf"
+        ],
+        "retrieved_sources": [
+          "dynamo_amazon_key_value_store.pdf",
+          "google_file_system.pdf"
+        ],
+        "matched_sources": [
+          "google_file_system.pdf"
+        ],
+        "hit": true
+      },
+      {
+        "id": 15,
+        "question": "What is the double-spending problem that the Bitcoin whitepaper proposes to solve, and what is the proposed solution?",
+        "expected_sources": [
+          "bitcoin_whitepaper.pdf"
+        ],
+        "retrieved_sources": [
+          "bitcoin_whitepaper.pdf"
+        ],
+        "matched_sources": [
+          "bitcoin_whitepaper.pdf"
+        ],
+        "hit": true
+      },
+      {
+        "id": 18,
+        "question": "How does a system decide which replica's version of the data should win when two nodes disagree after a network partition?",
+        "expected_sources": [
+          "dynamo_amazon_key_value_store.pdf",
+          "raft_consensus_algorithm.pdf"
+        ],
+        "retrieved_sources": [
+          "dynamo_amazon_key_value_store.pdf",
+          "google_file_system.pdf",
+          "raft_consensus_algorithm.pdf"
+        ],
+        "matched_sources": [
+          "dynamo_amazon_key_value_store.pdf",
+          "raft_consensus_algorithm.pdf"
+        ],
+        "hit": true
+      },
+      {
+        "id": 19,
+        "question": "What tool would help me track experiment metrics and model versions when I'm training machine learning models?",
+        "expected_sources": [
+          "mlflow_readme.md"
+        ],
+        "retrieved_sources": [
+          "mlflow_readme.md",
+          "transformers_readme.md"
+        ],
+        "matched_sources": [
+          "mlflow_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 20,
+        "question": "What technique involves showing a language model a few example input-output pairs directly in the prompt, without retraining it?",
+        "expected_sources": [
+          "prompt_eng_guide_basics.md"
+        ],
+        "retrieved_sources": [
+          "prompt_eng_guide_basics.md",
+          "prompt_eng_guide_intro.md"
+        ],
+        "matched_sources": [
+          "prompt_eng_guide_basics.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 21,
+        "question": "What does the project say about writing containers and running them across a cluster of machines?",
+        "expected_sources": [
+          "kubernetes_readme.md",
+          "moby_readme.md"
+        ],
+        "retrieved_sources": [
+          "google_file_system.pdf",
+          "kubernetes_readme.md"
+        ],
+        "matched_sources": [
+          "kubernetes_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 22,
+        "question": "What principle from Python's design philosophy would apply if I'm deciding between a clever one-liner and a longer but clearer piece of code?",
+        "expected_sources": [
+          "pep_0020_zen_of_python.txt"
+        ],
+        "retrieved_sources": [
+          "pep_0008_style_guide.txt",
+          "pep_0020_zen_of_python.txt"
+        ],
+        "matched_sources": [
+          "pep_0020_zen_of_python.txt"
+        ],
+        "hit": true
+      }
+    ]
+  },
+  {
+    "chunk_size": 500,
+    "overlap": 0,
+    "strategy": "fixed",
+    "k": 4,
+    "threshold": 0.3,
+    "hits": 19,
+    "misses": 1,
+    "total_questions": 20,
+    "hit_rate": 0.95,
+    "question_results": [
+      {
+        "id": 1,
+        "question": "What is Faiss and what kind of search problem is it designed for?",
+        "expected_sources": [
+          "faiss_readme.md"
+        ],
+        "retrieved_sources": [
+          "faiss_readme.md",
+          "google_file_system.pdf",
+          "raft_consensus_algorithm.pdf"
+        ],
+        "matched_sources": [
+          "faiss_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 2,
+        "question": "What company develops Faiss, and what group within it?",
+        "expected_sources": [
+          "faiss_readme.md"
+        ],
+        "retrieved_sources": [
+          "faiss_readme.md"
+        ],
+        "matched_sources": [
+          "faiss_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 3,
+        "question": "What is Chroma, according to its own README?",
+        "expected_sources": [
+          "chroma_readme.md"
+        ],
+        "retrieved_sources": [
+          "chroma_readme.md"
+        ],
+        "matched_sources": [
+          "chroma_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 4,
+        "question": "What does FastAPI claim as its key selling points as a web framework?",
+        "expected_sources": [
+          "fastapi_readme.md"
+        ],
+        "retrieved_sources": [
+          "fastapi_readme.md",
+          "tracemonkey_jit_paper.pdf"
+        ],
+        "matched_sources": [
+          "fastapi_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 5,
+        "question": "What is Kubernetes (K8s) used for, in one sentence?",
+        "expected_sources": [
+          "kubernetes_readme.md"
+        ],
+        "retrieved_sources": [
+          "kubernetes_readme.md",
+          "openai_python_readme.md"
+        ],
+        "matched_sources": [
+          "kubernetes_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 6,
+        "question": "What does the OpenAI Python library provide, and what minimum Python version does it require?",
+        "expected_sources": [
+          "openai_python_readme.md"
+        ],
+        "retrieved_sources": [
+          "openai_python_readme.md"
+        ],
+        "matched_sources": [
+          "openai_python_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 7,
+        "question": "What problem does the Requests library solve for Python developers?",
+        "expected_sources": [
+          "psf_requests_readme.md"
+        ],
+        "retrieved_sources": [
+          "langchain_readme.md",
+          "openai_python_readme.md",
+          "pep_0484_type_hints.txt",
+          "psf_requests_readme.md"
+        ],
+        "matched_sources": [
+          "psf_requests_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 8,
+        "question": "According to the Zen of Python, is explicit or implicit code considered better?",
+        "expected_sources": [
+          "pep_0020_zen_of_python.txt"
+        ],
+        "retrieved_sources": [
+          "pep_0008_style_guide.txt",
+          "pep_0020_zen_of_python.txt",
+          "pep_0484_type_hints.txt"
+        ],
+        "matched_sources": [
+          "pep_0020_zen_of_python.txt"
+        ],
+        "hit": true
+      },
+      {
+        "id": 9,
+        "question": "Who are the authors of PEP 257, the docstring conventions PEP?",
+        "expected_sources": [
+          "pep_0257_docstrings.txt"
+        ],
+        "retrieved_sources": [
+          "pep_0008_style_guide.txt",
+          "pep_0257_docstrings.txt",
+          "pep_0484_type_hints.txt"
+        ],
+        "matched_sources": [
+          "pep_0257_docstrings.txt"
+        ],
+        "hit": true
+      },
+      {
+        "id": 10,
+        "question": "What two things should a good CL (changelist) description communicate, according to the Google engineering practices doc?",
+        "expected_sources": [
+          "google_eng_practices_cl_descriptions.md"
+        ],
+        "retrieved_sources": [
+          "dynamo_amazon_key_value_store.pdf",
+          "google_eng_practices_cl_descriptions.md"
+        ],
+        "matched_sources": [
+          "google_eng_practices_cl_descriptions.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 11,
+        "question": "What is the primary purpose of code review, according to the Google code review standard doc?",
+        "expected_sources": [
+          "google_eng_practices_reviewer_standard.md"
+        ],
+        "retrieved_sources": [
+          "google_eng_practices_reviewer_standard.md"
+        ],
+        "matched_sources": [
+          "google_eng_practices_reviewer_standard.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 12,
+        "question": "What problem does the Raft consensus algorithm solve in distributed systems?",
+        "expected_sources": [
+          "raft_consensus_algorithm.pdf"
+        ],
+        "retrieved_sources": [
+          "raft_consensus_algorithm.pdf"
+        ],
+        "matched_sources": [
+          "raft_consensus_algorithm.pdf"
+        ],
+        "hit": true
+      },
+      {
+        "id": 13,
+        "question": "What is the core idea behind Amazon's Dynamo key-value store, and what consistency model does it emphasize?",
+        "expected_sources": [
+          "dynamo_amazon_key_value_store.pdf"
+        ],
+        "retrieved_sources": [
+          "dynamo_amazon_key_value_store.pdf"
+        ],
+        "matched_sources": [
+          "dynamo_amazon_key_value_store.pdf"
+        ],
+        "hit": true
+      },
+      {
+        "id": 14,
+        "question": "What problem is the Google File System (GFS) paper designed to address?",
+        "expected_sources": [
+          "google_file_system.pdf"
+        ],
+        "retrieved_sources": [
+          "google_file_system.pdf"
+        ],
+        "matched_sources": [
+          "google_file_system.pdf"
+        ],
+        "hit": true
+      },
+      {
+        "id": 15,
+        "question": "What is the double-spending problem that the Bitcoin whitepaper proposes to solve, and what is the proposed solution?",
+        "expected_sources": [
+          "bitcoin_whitepaper.pdf"
+        ],
+        "retrieved_sources": [
+          "bitcoin_whitepaper.pdf"
+        ],
+        "matched_sources": [
+          "bitcoin_whitepaper.pdf"
+        ],
+        "hit": true
+      },
+      {
+        "id": 18,
+        "question": "How does a system decide which replica's version of the data should win when two nodes disagree after a network partition?",
+        "expected_sources": [
+          "dynamo_amazon_key_value_store.pdf",
+          "raft_consensus_algorithm.pdf"
+        ],
+        "retrieved_sources": [
+          "dynamo_amazon_key_value_store.pdf",
+          "google_file_system.pdf"
+        ],
+        "matched_sources": [
+          "dynamo_amazon_key_value_store.pdf"
+        ],
+        "hit": true
+      },
+      {
+        "id": 19,
+        "question": "What tool would help me track experiment metrics and model versions when I'm training machine learning models?",
+        "expected_sources": [
+          "mlflow_readme.md"
+        ],
+        "retrieved_sources": [
+          "genai_for_beginners_readme.md",
+          "mlflow_readme.md"
+        ],
+        "matched_sources": [
+          "mlflow_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 20,
+        "question": "What technique involves showing a language model a few example input-output pairs directly in the prompt, without retraining it?",
+        "expected_sources": [
+          "prompt_eng_guide_basics.md"
+        ],
+        "retrieved_sources": [
+          "prompt_eng_guide_intro.md",
+          "transformers_readme.md"
+        ],
+        "matched_sources": [],
+        "hit": false
+      },
+      {
+        "id": 21,
+        "question": "What does the project say about writing containers and running them across a cluster of machines?",
+        "expected_sources": [
+          "kubernetes_readme.md",
+          "moby_readme.md"
+        ],
+        "retrieved_sources": [
+          "google_file_system.pdf",
+          "kubernetes_readme.md"
+        ],
+        "matched_sources": [
+          "kubernetes_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 22,
+        "question": "What principle from Python's design philosophy would apply if I'm deciding between a clever one-liner and a longer but clearer piece of code?",
+        "expected_sources": [
+          "pep_0020_zen_of_python.txt"
+        ],
+        "retrieved_sources": [
+          "pep_0008_style_guide.txt",
+          "pep_0020_zen_of_python.txt"
+        ],
+        "matched_sources": [
+          "pep_0020_zen_of_python.txt"
+        ],
+        "hit": true
+      }
+    ]
+  },
+  {
+    "chunk_size": 500,
+    "overlap": 100,
+    "strategy": "fixed",
+    "k": 4,
+    "threshold": 0.3,
+    "hits": 20,
+    "misses": 0,
+    "total_questions": 20,
+    "hit_rate": 1.0,
+    "question_results": [
+      {
+        "id": 1,
+        "question": "What is Faiss and what kind of search problem is it designed for?",
+        "expected_sources": [
+          "faiss_readme.md"
+        ],
+        "retrieved_sources": [
+          "faiss_readme.md",
+          "raft_consensus_algorithm.pdf"
+        ],
+        "matched_sources": [
+          "faiss_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 2,
+        "question": "What company develops Faiss, and what group within it?",
+        "expected_sources": [
+          "faiss_readme.md"
+        ],
+        "retrieved_sources": [
+          "faiss_readme.md"
+        ],
+        "matched_sources": [
+          "faiss_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 3,
+        "question": "What is Chroma, according to its own README?",
+        "expected_sources": [
+          "chroma_readme.md"
+        ],
+        "retrieved_sources": [
+          "chroma_readme.md"
+        ],
+        "matched_sources": [
+          "chroma_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 4,
+        "question": "What does FastAPI claim as its key selling points as a web framework?",
+        "expected_sources": [
+          "fastapi_readme.md"
+        ],
+        "retrieved_sources": [
+          "fastapi_readme.md",
+          "tracemonkey_jit_paper.pdf"
+        ],
+        "matched_sources": [
+          "fastapi_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 5,
+        "question": "What is Kubernetes (K8s) used for, in one sentence?",
+        "expected_sources": [
+          "kubernetes_readme.md"
+        ],
+        "retrieved_sources": [
+          "kubernetes_readme.md"
+        ],
+        "matched_sources": [
+          "kubernetes_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 6,
+        "question": "What does the OpenAI Python library provide, and what minimum Python version does it require?",
+        "expected_sources": [
+          "openai_python_readme.md"
+        ],
+        "retrieved_sources": [
+          "openai_python_readme.md"
+        ],
+        "matched_sources": [
+          "openai_python_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 7,
+        "question": "What problem does the Requests library solve for Python developers?",
+        "expected_sources": [
+          "psf_requests_readme.md"
+        ],
+        "retrieved_sources": [
+          "openai_python_readme.md",
+          "psf_requests_readme.md"
+        ],
+        "matched_sources": [
+          "psf_requests_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 8,
+        "question": "According to the Zen of Python, is explicit or implicit code considered better?",
+        "expected_sources": [
+          "pep_0020_zen_of_python.txt"
+        ],
+        "retrieved_sources": [
+          "pep_0008_style_guide.txt",
+          "pep_0020_zen_of_python.txt",
+          "pep_0484_type_hints.txt"
+        ],
+        "matched_sources": [
+          "pep_0020_zen_of_python.txt"
+        ],
+        "hit": true
+      },
+      {
+        "id": 9,
+        "question": "Who are the authors of PEP 257, the docstring conventions PEP?",
+        "expected_sources": [
+          "pep_0257_docstrings.txt"
+        ],
+        "retrieved_sources": [
+          "pep_0008_style_guide.txt",
+          "pep_0257_docstrings.txt"
+        ],
+        "matched_sources": [
+          "pep_0257_docstrings.txt"
+        ],
+        "hit": true
+      },
+      {
+        "id": 10,
+        "question": "What two things should a good CL (changelist) description communicate, according to the Google engineering practices doc?",
+        "expected_sources": [
+          "google_eng_practices_cl_descriptions.md"
+        ],
+        "retrieved_sources": [
+          "google_eng_practices_cl_descriptions.md"
+        ],
+        "matched_sources": [
+          "google_eng_practices_cl_descriptions.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 11,
+        "question": "What is the primary purpose of code review, according to the Google code review standard doc?",
+        "expected_sources": [
+          "google_eng_practices_reviewer_standard.md"
+        ],
+        "retrieved_sources": [
+          "google_eng_practices_cl_descriptions.md",
+          "google_eng_practices_reviewer_standard.md"
+        ],
+        "matched_sources": [
+          "google_eng_practices_reviewer_standard.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 12,
+        "question": "What problem does the Raft consensus algorithm solve in distributed systems?",
+        "expected_sources": [
+          "raft_consensus_algorithm.pdf"
+        ],
+        "retrieved_sources": [
+          "raft_consensus_algorithm.pdf"
+        ],
+        "matched_sources": [
+          "raft_consensus_algorithm.pdf"
+        ],
+        "hit": true
+      },
+      {
+        "id": 13,
+        "question": "What is the core idea behind Amazon's Dynamo key-value store, and what consistency model does it emphasize?",
+        "expected_sources": [
+          "dynamo_amazon_key_value_store.pdf"
+        ],
+        "retrieved_sources": [
+          "dynamo_amazon_key_value_store.pdf"
+        ],
+        "matched_sources": [
+          "dynamo_amazon_key_value_store.pdf"
+        ],
+        "hit": true
+      },
+      {
+        "id": 14,
+        "question": "What problem is the Google File System (GFS) paper designed to address?",
+        "expected_sources": [
+          "google_file_system.pdf"
+        ],
+        "retrieved_sources": [
+          "google_file_system.pdf"
+        ],
+        "matched_sources": [
+          "google_file_system.pdf"
+        ],
+        "hit": true
+      },
+      {
+        "id": 15,
+        "question": "What is the double-spending problem that the Bitcoin whitepaper proposes to solve, and what is the proposed solution?",
+        "expected_sources": [
+          "bitcoin_whitepaper.pdf"
+        ],
+        "retrieved_sources": [
+          "bitcoin_whitepaper.pdf"
+        ],
+        "matched_sources": [
+          "bitcoin_whitepaper.pdf"
+        ],
+        "hit": true
+      },
+      {
+        "id": 18,
+        "question": "How does a system decide which replica's version of the data should win when two nodes disagree after a network partition?",
+        "expected_sources": [
+          "dynamo_amazon_key_value_store.pdf",
+          "raft_consensus_algorithm.pdf"
+        ],
+        "retrieved_sources": [
+          "dynamo_amazon_key_value_store.pdf",
+          "google_file_system.pdf",
+          "raft_consensus_algorithm.pdf"
+        ],
+        "matched_sources": [
+          "dynamo_amazon_key_value_store.pdf",
+          "raft_consensus_algorithm.pdf"
+        ],
+        "hit": true
+      },
+      {
+        "id": 19,
+        "question": "What tool would help me track experiment metrics and model versions when I'm training machine learning models?",
+        "expected_sources": [
+          "mlflow_readme.md"
+        ],
+        "retrieved_sources": [
+          "mlflow_readme.md",
+          "tracemonkey_jit_paper.pdf"
+        ],
+        "matched_sources": [
+          "mlflow_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 20,
+        "question": "What technique involves showing a language model a few example input-output pairs directly in the prompt, without retraining it?",
+        "expected_sources": [
+          "prompt_eng_guide_basics.md"
+        ],
+        "retrieved_sources": [
+          "prompt_eng_guide_basics.md",
+          "prompt_eng_guide_intro.md"
+        ],
+        "matched_sources": [
+          "prompt_eng_guide_basics.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 21,
+        "question": "What does the project say about writing containers and running them across a cluster of machines?",
+        "expected_sources": [
+          "kubernetes_readme.md",
+          "moby_readme.md"
+        ],
+        "retrieved_sources": [
+          "google_file_system.pdf",
+          "kubernetes_readme.md"
+        ],
+        "matched_sources": [
+          "kubernetes_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 22,
+        "question": "What principle from Python's design philosophy would apply if I'm deciding between a clever one-liner and a longer but clearer piece of code?",
+        "expected_sources": [
+          "pep_0020_zen_of_python.txt"
+        ],
+        "retrieved_sources": [
+          "pep_0008_style_guide.txt",
+          "pep_0020_zen_of_python.txt"
+        ],
+        "matched_sources": [
+          "pep_0020_zen_of_python.txt"
+        ],
+        "hit": true
+      }
+    ]
+  },
+  {
+    "chunk_size": 500,
+    "overlap": 50,
+    "strategy": "fixed",
+    "k": 2,
+    "threshold": 0.3,
+    "hits": 19,
+    "misses": 1,
+    "total_questions": 20,
+    "hit_rate": 0.95,
+    "question_results": [
+      {
+        "id": 1,
+        "question": "What is Faiss and what kind of search problem is it designed for?",
+        "expected_sources": [
+          "faiss_readme.md"
+        ],
+        "retrieved_sources": [
+          "faiss_readme.md"
+        ],
+        "matched_sources": [
+          "faiss_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 2,
+        "question": "What company develops Faiss, and what group within it?",
+        "expected_sources": [
+          "faiss_readme.md"
+        ],
+        "retrieved_sources": [
+          "faiss_readme.md"
+        ],
+        "matched_sources": [
+          "faiss_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 3,
+        "question": "What is Chroma, according to its own README?",
+        "expected_sources": [
+          "chroma_readme.md"
+        ],
+        "retrieved_sources": [
+          "chroma_readme.md"
+        ],
+        "matched_sources": [
+          "chroma_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 4,
+        "question": "What does FastAPI claim as its key selling points as a web framework?",
+        "expected_sources": [
+          "fastapi_readme.md"
+        ],
+        "retrieved_sources": [
+          "fastapi_readme.md"
+        ],
+        "matched_sources": [
+          "fastapi_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 5,
+        "question": "What is Kubernetes (K8s) used for, in one sentence?",
+        "expected_sources": [
+          "kubernetes_readme.md"
+        ],
+        "retrieved_sources": [
+          "kubernetes_readme.md"
+        ],
+        "matched_sources": [
+          "kubernetes_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 6,
+        "question": "What does the OpenAI Python library provide, and what minimum Python version does it require?",
+        "expected_sources": [
+          "openai_python_readme.md"
+        ],
+        "retrieved_sources": [
+          "openai_python_readme.md"
+        ],
+        "matched_sources": [
+          "openai_python_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 7,
+        "question": "What problem does the Requests library solve for Python developers?",
+        "expected_sources": [
+          "psf_requests_readme.md"
+        ],
+        "retrieved_sources": [
+          "pep_0008_style_guide.txt",
+          "psf_requests_readme.md"
+        ],
+        "matched_sources": [
+          "psf_requests_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 8,
+        "question": "According to the Zen of Python, is explicit or implicit code considered better?",
+        "expected_sources": [
+          "pep_0020_zen_of_python.txt"
+        ],
+        "retrieved_sources": [
+          "pep_0008_style_guide.txt",
+          "pep_0020_zen_of_python.txt"
+        ],
+        "matched_sources": [
+          "pep_0020_zen_of_python.txt"
+        ],
+        "hit": true
+      },
+      {
+        "id": 9,
+        "question": "Who are the authors of PEP 257, the docstring conventions PEP?",
+        "expected_sources": [
+          "pep_0257_docstrings.txt"
+        ],
+        "retrieved_sources": [
+          "pep_0008_style_guide.txt",
+          "pep_0257_docstrings.txt"
+        ],
+        "matched_sources": [
+          "pep_0257_docstrings.txt"
+        ],
+        "hit": true
+      },
+      {
+        "id": 10,
+        "question": "What two things should a good CL (changelist) description communicate, according to the Google engineering practices doc?",
+        "expected_sources": [
+          "google_eng_practices_cl_descriptions.md"
+        ],
+        "retrieved_sources": [
+          "google_eng_practices_cl_descriptions.md"
+        ],
+        "matched_sources": [
+          "google_eng_practices_cl_descriptions.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 11,
+        "question": "What is the primary purpose of code review, according to the Google code review standard doc?",
+        "expected_sources": [
+          "google_eng_practices_reviewer_standard.md"
+        ],
+        "retrieved_sources": [
+          "google_eng_practices_reviewer_standard.md"
+        ],
+        "matched_sources": [
+          "google_eng_practices_reviewer_standard.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 12,
+        "question": "What problem does the Raft consensus algorithm solve in distributed systems?",
+        "expected_sources": [
+          "raft_consensus_algorithm.pdf"
+        ],
+        "retrieved_sources": [
+          "raft_consensus_algorithm.pdf"
+        ],
+        "matched_sources": [
+          "raft_consensus_algorithm.pdf"
+        ],
+        "hit": true
+      },
+      {
+        "id": 13,
+        "question": "What is the core idea behind Amazon's Dynamo key-value store, and what consistency model does it emphasize?",
+        "expected_sources": [
+          "dynamo_amazon_key_value_store.pdf"
+        ],
+        "retrieved_sources": [
+          "dynamo_amazon_key_value_store.pdf"
+        ],
+        "matched_sources": [
+          "dynamo_amazon_key_value_store.pdf"
+        ],
+        "hit": true
+      },
+      {
+        "id": 14,
+        "question": "What problem is the Google File System (GFS) paper designed to address?",
+        "expected_sources": [
+          "google_file_system.pdf"
+        ],
+        "retrieved_sources": [
+          "google_file_system.pdf"
+        ],
+        "matched_sources": [
+          "google_file_system.pdf"
+        ],
+        "hit": true
+      },
+      {
+        "id": 15,
+        "question": "What is the double-spending problem that the Bitcoin whitepaper proposes to solve, and what is the proposed solution?",
+        "expected_sources": [
+          "bitcoin_whitepaper.pdf"
+        ],
+        "retrieved_sources": [
+          "bitcoin_whitepaper.pdf"
+        ],
+        "matched_sources": [
+          "bitcoin_whitepaper.pdf"
+        ],
+        "hit": true
+      },
+      {
+        "id": 18,
+        "question": "How does a system decide which replica's version of the data should win when two nodes disagree after a network partition?",
+        "expected_sources": [
+          "dynamo_amazon_key_value_store.pdf",
+          "raft_consensus_algorithm.pdf"
+        ],
+        "retrieved_sources": [
+          "google_file_system.pdf"
+        ],
+        "matched_sources": [],
+        "hit": false
+      },
+      {
+        "id": 19,
+        "question": "What tool would help me track experiment metrics and model versions when I'm training machine learning models?",
+        "expected_sources": [
+          "mlflow_readme.md"
+        ],
+        "retrieved_sources": [
+          "mlflow_readme.md"
+        ],
+        "matched_sources": [
+          "mlflow_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 20,
+        "question": "What technique involves showing a language model a few example input-output pairs directly in the prompt, without retraining it?",
+        "expected_sources": [
+          "prompt_eng_guide_basics.md"
+        ],
+        "retrieved_sources": [
+          "prompt_eng_guide_basics.md",
+          "prompt_eng_guide_intro.md"
+        ],
+        "matched_sources": [
+          "prompt_eng_guide_basics.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 21,
+        "question": "What does the project say about writing containers and running them across a cluster of machines?",
+        "expected_sources": [
+          "kubernetes_readme.md",
+          "moby_readme.md"
+        ],
+        "retrieved_sources": [
+          "google_file_system.pdf",
+          "kubernetes_readme.md"
+        ],
+        "matched_sources": [
+          "kubernetes_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 22,
+        "question": "What principle from Python's design philosophy would apply if I'm deciding between a clever one-liner and a longer but clearer piece of code?",
+        "expected_sources": [
+          "pep_0020_zen_of_python.txt"
+        ],
+        "retrieved_sources": [
+          "pep_0008_style_guide.txt",
+          "pep_0020_zen_of_python.txt"
+        ],
+        "matched_sources": [
+          "pep_0020_zen_of_python.txt"
+        ],
+        "hit": true
+      }
+    ]
+  },
+  {
+    "chunk_size": 500,
+    "overlap": 50,
+    "strategy": "fixed",
+    "k": 8,
+    "threshold": 0.3,
+    "hits": 20,
+    "misses": 0,
+    "total_questions": 20,
+    "hit_rate": 1.0,
+    "question_results": [
+      {
+        "id": 1,
+        "question": "What is Faiss and what kind of search problem is it designed for?",
+        "expected_sources": [
+          "faiss_readme.md"
+        ],
+        "retrieved_sources": [
+          "dynamo_amazon_key_value_store.pdf",
+          "faiss_readme.md",
+          "raft_consensus_algorithm.pdf"
+        ],
+        "matched_sources": [
+          "faiss_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 2,
+        "question": "What company develops Faiss, and what group within it?",
+        "expected_sources": [
+          "faiss_readme.md"
+        ],
+        "retrieved_sources": [
+          "faiss_readme.md"
+        ],
+        "matched_sources": [
+          "faiss_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 3,
+        "question": "What is Chroma, according to its own README?",
+        "expected_sources": [
+          "chroma_readme.md"
+        ],
+        "retrieved_sources": [
+          "chroma_readme.md"
+        ],
+        "matched_sources": [
+          "chroma_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 4,
+        "question": "What does FastAPI claim as its key selling points as a web framework?",
+        "expected_sources": [
+          "fastapi_readme.md"
+        ],
+        "retrieved_sources": [
+          "fastapi_readme.md",
+          "tracemonkey_jit_paper.pdf"
+        ],
+        "matched_sources": [
+          "fastapi_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 5,
+        "question": "What is Kubernetes (K8s) used for, in one sentence?",
+        "expected_sources": [
+          "kubernetes_readme.md"
+        ],
+        "retrieved_sources": [
+          "kubernetes_readme.md"
+        ],
+        "matched_sources": [
+          "kubernetes_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 6,
+        "question": "What does the OpenAI Python library provide, and what minimum Python version does it require?",
+        "expected_sources": [
+          "openai_python_readme.md"
+        ],
+        "retrieved_sources": [
+          "genai_for_beginners_readme.md",
+          "openai_python_readme.md"
+        ],
+        "matched_sources": [
+          "openai_python_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 7,
+        "question": "What problem does the Requests library solve for Python developers?",
+        "expected_sources": [
+          "psf_requests_readme.md"
+        ],
+        "retrieved_sources": [
+          "fastapi_readme.md",
+          "openai_python_readme.md",
+          "pep_0008_style_guide.txt",
+          "psf_requests_readme.md"
+        ],
+        "matched_sources": [
+          "psf_requests_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 8,
+        "question": "According to the Zen of Python, is explicit or implicit code considered better?",
+        "expected_sources": [
+          "pep_0020_zen_of_python.txt"
+        ],
+        "retrieved_sources": [
+          "pep_0008_style_guide.txt",
+          "pep_0020_zen_of_python.txt",
+          "pep_0484_type_hints.txt"
+        ],
+        "matched_sources": [
+          "pep_0020_zen_of_python.txt"
+        ],
+        "hit": true
+      },
+      {
+        "id": 9,
+        "question": "Who are the authors of PEP 257, the docstring conventions PEP?",
+        "expected_sources": [
+          "pep_0257_docstrings.txt"
+        ],
+        "retrieved_sources": [
+          "pep_0008_style_guide.txt",
+          "pep_0257_docstrings.txt",
+          "pep_0484_type_hints.txt"
+        ],
+        "matched_sources": [
+          "pep_0257_docstrings.txt"
+        ],
+        "hit": true
+      },
+      {
+        "id": 10,
+        "question": "What two things should a good CL (changelist) description communicate, according to the Google engineering practices doc?",
+        "expected_sources": [
+          "google_eng_practices_cl_descriptions.md"
+        ],
+        "retrieved_sources": [
+          "google_eng_practices_cl_descriptions.md",
+          "google_eng_practices_reviewer_standard.md",
+          "pep_0257_docstrings.txt",
+          "prompt_eng_guide_basics.md"
+        ],
+        "matched_sources": [
+          "google_eng_practices_cl_descriptions.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 11,
+        "question": "What is the primary purpose of code review, according to the Google code review standard doc?",
+        "expected_sources": [
+          "google_eng_practices_reviewer_standard.md"
+        ],
+        "retrieved_sources": [
+          "google_eng_practices_cl_descriptions.md",
+          "google_eng_practices_reviewer_standard.md"
+        ],
+        "matched_sources": [
+          "google_eng_practices_reviewer_standard.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 12,
+        "question": "What problem does the Raft consensus algorithm solve in distributed systems?",
+        "expected_sources": [
+          "raft_consensus_algorithm.pdf"
+        ],
+        "retrieved_sources": [
+          "raft_consensus_algorithm.pdf"
+        ],
+        "matched_sources": [
+          "raft_consensus_algorithm.pdf"
+        ],
+        "hit": true
+      },
+      {
+        "id": 13,
+        "question": "What is the core idea behind Amazon's Dynamo key-value store, and what consistency model does it emphasize?",
+        "expected_sources": [
+          "dynamo_amazon_key_value_store.pdf"
+        ],
+        "retrieved_sources": [
+          "dynamo_amazon_key_value_store.pdf"
+        ],
+        "matched_sources": [
+          "dynamo_amazon_key_value_store.pdf"
+        ],
+        "hit": true
+      },
+      {
+        "id": 14,
+        "question": "What problem is the Google File System (GFS) paper designed to address?",
+        "expected_sources": [
+          "google_file_system.pdf"
+        ],
+        "retrieved_sources": [
+          "dynamo_amazon_key_value_store.pdf",
+          "google_file_system.pdf"
+        ],
+        "matched_sources": [
+          "google_file_system.pdf"
+        ],
+        "hit": true
+      },
+      {
+        "id": 15,
+        "question": "What is the double-spending problem that the Bitcoin whitepaper proposes to solve, and what is the proposed solution?",
+        "expected_sources": [
+          "bitcoin_whitepaper.pdf"
+        ],
+        "retrieved_sources": [
+          "bitcoin_whitepaper.pdf"
+        ],
+        "matched_sources": [
+          "bitcoin_whitepaper.pdf"
+        ],
+        "hit": true
+      },
+      {
+        "id": 18,
+        "question": "How does a system decide which replica's version of the data should win when two nodes disagree after a network partition?",
+        "expected_sources": [
+          "dynamo_amazon_key_value_store.pdf",
+          "raft_consensus_algorithm.pdf"
+        ],
+        "retrieved_sources": [
+          "dynamo_amazon_key_value_store.pdf",
+          "google_file_system.pdf",
+          "raft_consensus_algorithm.pdf"
+        ],
+        "matched_sources": [
+          "dynamo_amazon_key_value_store.pdf",
+          "raft_consensus_algorithm.pdf"
+        ],
+        "hit": true
+      },
+      {
+        "id": 19,
+        "question": "What tool would help me track experiment metrics and model versions when I'm training machine learning models?",
+        "expected_sources": [
+          "mlflow_readme.md"
+        ],
+        "retrieved_sources": [
+          "fastapi_readme.md",
+          "genai_for_beginners_readme.md",
+          "kubernetes_readme.md",
+          "mlflow_readme.md",
+          "tidy_data_wickham.pdf",
+          "transformers_readme.md"
+        ],
+        "matched_sources": [
+          "mlflow_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 20,
+        "question": "What technique involves showing a language model a few example input-output pairs directly in the prompt, without retraining it?",
+        "expected_sources": [
+          "prompt_eng_guide_basics.md"
+        ],
+        "retrieved_sources": [
+          "prompt_eng_guide_basics.md",
+          "prompt_eng_guide_intro.md",
+          "transformers_readme.md"
+        ],
+        "matched_sources": [
+          "prompt_eng_guide_basics.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 21,
+        "question": "What does the project say about writing containers and running them across a cluster of machines?",
+        "expected_sources": [
+          "kubernetes_readme.md",
+          "moby_readme.md"
+        ],
+        "retrieved_sources": [
+          "google_file_system.pdf",
+          "kubernetes_readme.md",
+          "moby_readme.md"
+        ],
+        "matched_sources": [
+          "kubernetes_readme.md",
+          "moby_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 22,
+        "question": "What principle from Python's design philosophy would apply if I'm deciding between a clever one-liner and a longer but clearer piece of code?",
+        "expected_sources": [
+          "pep_0020_zen_of_python.txt"
+        ],
+        "retrieved_sources": [
+          "pep_0008_style_guide.txt",
+          "pep_0020_zen_of_python.txt"
+        ],
+        "matched_sources": [
+          "pep_0020_zen_of_python.txt"
+        ],
+        "hit": true
+      }
+    ]
+  },
+  {
+    "chunk_size": 500,
+    "overlap": 50,
+    "strategy": "recursive",
+    "k": 4,
+    "threshold": 0.3,
+    "hits": 20,
+    "misses": 0,
+    "total_questions": 20,
+    "hit_rate": 1.0,
+    "question_results": [
+      {
+        "id": 1,
+        "question": "What is Faiss and what kind of search problem is it designed for?",
+        "expected_sources": [
+          "faiss_readme.md"
+        ],
+        "retrieved_sources": [
+          "dynamo_amazon_key_value_store.pdf",
+          "faiss_readme.md"
+        ],
+        "matched_sources": [
+          "faiss_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 2,
+        "question": "What company develops Faiss, and what group within it?",
+        "expected_sources": [
+          "faiss_readme.md"
+        ],
+        "retrieved_sources": [
+          "faiss_readme.md"
+        ],
+        "matched_sources": [
+          "faiss_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 3,
+        "question": "What is Chroma, according to its own README?",
+        "expected_sources": [
+          "chroma_readme.md"
+        ],
+        "retrieved_sources": [
+          "chroma_readme.md"
+        ],
+        "matched_sources": [
+          "chroma_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 4,
+        "question": "What does FastAPI claim as its key selling points as a web framework?",
+        "expected_sources": [
+          "fastapi_readme.md"
+        ],
+        "retrieved_sources": [
+          "fastapi_readme.md",
+          "tracemonkey_jit_paper.pdf"
+        ],
+        "matched_sources": [
+          "fastapi_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 5,
+        "question": "What is Kubernetes (K8s) used for, in one sentence?",
+        "expected_sources": [
+          "kubernetes_readme.md"
+        ],
+        "retrieved_sources": [
+          "kubernetes_readme.md",
+          "openai_python_readme.md"
+        ],
+        "matched_sources": [
+          "kubernetes_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 6,
+        "question": "What does the OpenAI Python library provide, and what minimum Python version does it require?",
+        "expected_sources": [
+          "openai_python_readme.md"
+        ],
+        "retrieved_sources": [
+          "openai_python_readme.md"
+        ],
+        "matched_sources": [
+          "openai_python_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 7,
+        "question": "What problem does the Requests library solve for Python developers?",
+        "expected_sources": [
+          "psf_requests_readme.md"
+        ],
+        "retrieved_sources": [
+          "fastapi_readme.md",
+          "openai_python_readme.md",
+          "psf_requests_readme.md"
+        ],
+        "matched_sources": [
+          "psf_requests_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 8,
+        "question": "According to the Zen of Python, is explicit or implicit code considered better?",
+        "expected_sources": [
+          "pep_0020_zen_of_python.txt"
+        ],
+        "retrieved_sources": [
+          "pep_0008_style_guide.txt",
+          "pep_0020_zen_of_python.txt",
+          "pep_0484_type_hints.txt"
+        ],
+        "matched_sources": [
+          "pep_0020_zen_of_python.txt"
+        ],
+        "hit": true
+      },
+      {
+        "id": 9,
+        "question": "Who are the authors of PEP 257, the docstring conventions PEP?",
+        "expected_sources": [
+          "pep_0257_docstrings.txt"
+        ],
+        "retrieved_sources": [
+          "pep_0008_style_guide.txt",
+          "pep_0257_docstrings.txt",
+          "pep_0484_type_hints.txt"
+        ],
+        "matched_sources": [
+          "pep_0257_docstrings.txt"
+        ],
+        "hit": true
+      },
+      {
+        "id": 10,
+        "question": "What two things should a good CL (changelist) description communicate, according to the Google engineering practices doc?",
+        "expected_sources": [
+          "google_eng_practices_cl_descriptions.md"
+        ],
+        "retrieved_sources": [
+          "google_eng_practices_cl_descriptions.md"
+        ],
+        "matched_sources": [
+          "google_eng_practices_cl_descriptions.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 11,
+        "question": "What is the primary purpose of code review, according to the Google code review standard doc?",
+        "expected_sources": [
+          "google_eng_practices_reviewer_standard.md"
+        ],
+        "retrieved_sources": [
+          "google_eng_practices_reviewer_standard.md"
+        ],
+        "matched_sources": [
+          "google_eng_practices_reviewer_standard.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 12,
+        "question": "What problem does the Raft consensus algorithm solve in distributed systems?",
+        "expected_sources": [
+          "raft_consensus_algorithm.pdf"
+        ],
+        "retrieved_sources": [
+          "raft_consensus_algorithm.pdf"
+        ],
+        "matched_sources": [
+          "raft_consensus_algorithm.pdf"
+        ],
+        "hit": true
+      },
+      {
+        "id": 13,
+        "question": "What is the core idea behind Amazon's Dynamo key-value store, and what consistency model does it emphasize?",
+        "expected_sources": [
+          "dynamo_amazon_key_value_store.pdf"
+        ],
+        "retrieved_sources": [
+          "dynamo_amazon_key_value_store.pdf"
+        ],
+        "matched_sources": [
+          "dynamo_amazon_key_value_store.pdf"
+        ],
+        "hit": true
+      },
+      {
+        "id": 14,
+        "question": "What problem is the Google File System (GFS) paper designed to address?",
+        "expected_sources": [
+          "google_file_system.pdf"
+        ],
+        "retrieved_sources": [
+          "dynamo_amazon_key_value_store.pdf",
+          "google_file_system.pdf"
+        ],
+        "matched_sources": [
+          "google_file_system.pdf"
+        ],
+        "hit": true
+      },
+      {
+        "id": 15,
+        "question": "What is the double-spending problem that the Bitcoin whitepaper proposes to solve, and what is the proposed solution?",
+        "expected_sources": [
+          "bitcoin_whitepaper.pdf"
+        ],
+        "retrieved_sources": [
+          "bitcoin_whitepaper.pdf"
+        ],
+        "matched_sources": [
+          "bitcoin_whitepaper.pdf"
+        ],
+        "hit": true
+      },
+      {
+        "id": 18,
+        "question": "How does a system decide which replica's version of the data should win when two nodes disagree after a network partition?",
+        "expected_sources": [
+          "dynamo_amazon_key_value_store.pdf",
+          "raft_consensus_algorithm.pdf"
+        ],
+        "retrieved_sources": [
+          "dynamo_amazon_key_value_store.pdf",
+          "google_file_system.pdf",
+          "raft_consensus_algorithm.pdf"
+        ],
+        "matched_sources": [
+          "dynamo_amazon_key_value_store.pdf",
+          "raft_consensus_algorithm.pdf"
+        ],
+        "hit": true
+      },
+      {
+        "id": 19,
+        "question": "What tool would help me track experiment metrics and model versions when I'm training machine learning models?",
+        "expected_sources": [
+          "mlflow_readme.md"
+        ],
+        "retrieved_sources": [
+          "mlflow_readme.md",
+          "transformers_readme.md"
+        ],
+        "matched_sources": [
+          "mlflow_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 20,
+        "question": "What technique involves showing a language model a few example input-output pairs directly in the prompt, without retraining it?",
+        "expected_sources": [
+          "prompt_eng_guide_basics.md"
+        ],
+        "retrieved_sources": [
+          "prompt_eng_guide_basics.md",
+          "prompt_eng_guide_intro.md"
+        ],
+        "matched_sources": [
+          "prompt_eng_guide_basics.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 21,
+        "question": "What does the project say about writing containers and running them across a cluster of machines?",
+        "expected_sources": [
+          "kubernetes_readme.md",
+          "moby_readme.md"
+        ],
+        "retrieved_sources": [
+          "google_file_system.pdf",
+          "kubernetes_readme.md"
+        ],
+        "matched_sources": [
+          "kubernetes_readme.md"
+        ],
+        "hit": true
+      },
+      {
+        "id": 22,
+        "question": "What principle from Python's design philosophy would apply if I'm deciding between a clever one-liner and a longer but clearer piece of code?",
+        "expected_sources": [
+          "pep_0020_zen_of_python.txt"
+        ],
+        "retrieved_sources": [
+          "pep_0008_style_guide.txt",
+          "pep_0020_zen_of_python.txt"
+        ],
+        "matched_sources": [
+          "pep_0020_zen_of_python.txt"
+        ],
+        "hit": true
+      }
+    ]
+  }
+]

@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "question": "What is Faiss and what kind of search problem is it designed for?",
+    "expected_sources": ["faiss_README.md"],
+    "notes": "ML tooling cluster"
+  },
+  {
+    "id": 2,
+    "question": "What company develops Faiss, and what group within it?",
+    "expected_sources": ["faiss_README.md"],
+    "notes": "ML tooling cluster"
+  },
+  {
+    "id": 3,
+    "question": "What is Chroma, according to its own README?",
+    "expected_sources": ["chroma_README.md"],
+    "notes": "ML tooling cluster"
+  },
+  {
+    "id": 4,
+    "question": "What does FastAPI claim as its key selling points as a web framework?",
+    "expected_sources": ["fastapi_README.md"],
+    "notes": "ML tooling / web framework cluster"
+  },
+  {
+    "id": 5,
+    "question": "What is Kubernetes (K8s) used for, in one sentence?",
+    "expected_sources": ["kubernetes_README.md"],
+    "notes": "Infra/systems cluster"
+  },
+  {
+    "id": 6,
+    "question": "What does the OpenAI Python library provide, and what minimum Python version does it require?",
+    "expected_sources": ["openai_python_README.md"],
+    "notes": "ML tooling cluster"
+  },
+  {
+    "id": 7,
+    "question": "What problem does the Requests library solve for Python developers?",
+    "expected_sources": ["psf_requests_README.md"],
+    "notes": "Python ecosystem cluster"
+  },
+  {
+    "id": 8,
+    "question": "According to the Zen of Python, is explicit or implicit code considered better?",
+    "expected_sources": ["pep_0020_zen_of_python.txt"],
+    "notes": "Python PEP cluster"
+  },
+  {
+    "id": 9,
+    "question": "Who are the authors of PEP 257, the docstring conventions PEP?",
+    "expected_sources": ["pep_0257_docstrings.txt"],
+    "notes": "Python PEP cluster"
+  },
+  {
+    "id": 10,
+    "question": "What two things should a good CL (changelist) description communicate, according to the Google engineering practices doc?",
+    "expected_sources": ["google_eng_practices_cl_descriptions.md"],
+    "notes": "Eng practices cluster"
+  },
+  {
+    "id": 11,
+    "question": "What is the primary purpose of code review, according to the Google code review standard doc?",
+    "expected_sources": ["google_eng_practices_reviewer_standard.md"],
+    "notes": "Eng practices cluster"
+  },
+  {
+    "id": 12,
+    "question": "What problem does the Raft consensus algorithm solve in distributed systems?",
+    "expected_sources": ["raft_consensus_algorithm.pdf"],
+    "notes": "Distributed systems papers cluster"
+  },
+  {
+    "id": 13,
+    "question": "What is the core idea behind Amazon's Dynamo key-value store, and what consistency model does it emphasize?",
+    "expected_sources": ["dynamo_amazon_key_value_store.pdf"],
+    "notes": "Distributed systems papers cluster"
+  },
+  {
+    "id": 14,
+    "question": "What problem is the Google File System (GFS) paper designed to address?",
+    "expected_sources": ["google_file_system.pdf"],
+    "notes": "Distributed systems papers cluster"
+  },
+  {
+    "id": 15,
+    "question": "What is the double-spending problem that the Bitcoin whitepaper proposes to solve, and what is the proposed solution?",
+    "expected_sources": ["bitcoin_whitepaper.pdf"],
+    "notes": "Distributed systems papers cluster"
+  },
+  {
+    "id": 16,
+    "question": "What is the capital of France?",
+    "expected_sources": [],
+    "notes": "Out-of-corpus control question - should trigger the 'not found' path, no LLM call"
+  },
+  {
+    "id": 17,
+    "question": "What were Microsoft's quarterly earnings last year?",
+    "expected_sources": [],
+    "notes": "Out-of-corpus control question - should trigger the 'not found' path, no LLM call"
+  },
+  {
+    "id": 18,
+    "question": "How does a system decide which replica's version of the data should win when two nodes disagree after a network partition?",
+    "expected_sources": ["dynamo_amazon_key_value_store.pdf", "raft_consensus_algorithm.pdf"],
+    "notes": "Hard - vague distributed-systems phrasing, could plausibly match either Dynamo (vector clocks/conflict resolution) or Raft (leader election/log consistency), likely to vary with chunk size/top-k"
+  },
+  {
+    "id": 19,
+    "question": "What tool would help me track experiment metrics and model versions when I'm training machine learning models?",
+    "expected_sources": ["mlflow_README.md"],
+    "notes": "Hard - paraphrased, no product name mentioned, tests whether semantic retrieval beats keyword overlap"
+  },
+  {
+    "id": 20,
+    "question": "What technique involves showing a language model a few example input-output pairs directly in the prompt, without retraining it?",
+    "expected_sources": ["prompt_eng_guide_basics.md"],
+    "notes": "Hard - paraphrased description of few-shot prompting, no exact keyword match - corpus check confirmed prompt_eng_guide_basics.md actually covers this topic (replaces the original Q20, which incorrectly assumed the prompt-eng docs cover text chunking - they don't)"
+  },
+  {
+    "id": 21,
+    "question": "What does the project say about writing containers and running them across a cluster of machines?",
+    "expected_sources": ["kubernetes_README.md", "moby_README.md"],
+    "notes": "Hard - ambiguous between two docker/container-adjacent sources, good test of whether top-k=2 is enough to surface both"
+  },
+  {
+    "id": 22,
+    "question": "What principle from Python's design philosophy would apply if I'm deciding between a clever one-liner and a longer but clearer piece of code?",
+    "expected_sources": ["pep_0020_zen_of_python.txt"],
+    "notes": "Hard - paraphrased scenario instead of asking about the document directly, no direct keyword overlap with 'Zen of Python'"
+  }
+]
